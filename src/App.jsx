@@ -14,7 +14,7 @@ function App() {
 
         <a
           className="whatsapp-link"
-          href="https://wa.me/"
+          href="https://wa.me/5491164650151"
           target="_blank"
           rel="noreferrer"
         >
@@ -22,17 +22,22 @@ function App() {
         </a>
       </header>
 
+      
       <main>
-        
-<img
-  className="hero-image"
-  src="/picada1.jpeg"
-  alt="Picada de La Clásica"
-/>
+        <section className="hero">
+          <div className="hero-content">
+            <h1>Picadas que reúnen.</h1>
+            <p>Picadas, fiambres y delicias varias para compartir.</p>
+          </div>
 
-        <h1>Picadas que reúnen.</h1>
-        <p>Picadas, fiambres y empanadas para compartir.</p>
+          <img
+            className="hero-image"
+            src="/banner_picada.png"
+            alt="Picada de La Clásica"
+          />
+        </section>
       </main>
+
     </>
   )
 }
