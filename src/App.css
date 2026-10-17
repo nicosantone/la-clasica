@@ -75,6 +75,101 @@ main {
   display: none;
 }
 
+/* Productos destacados */
+.featured {
+  padding: 80px 7%;
+  background-color: #faf7f2;
+}
+
+.featured-heading {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.section-eyebrow {
+  margin: 0 0 12px;
+  color: #8b6a50;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.featured-heading h2 {
+  margin: 0 0 14px;
+  color: #49372d;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+
+.featured-heading > p:last-child {
+  margin: 0;
+  color: #78685d;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-card {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 18px rgb(73 55 45 / 7%);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgb(73 55 45 / 12%);
+}
+
+.product-card img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 24px;
+}
+
+.product-info h3 {
+  margin: 0 0 10px;
+  color: #49372d;
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.product-info p {
+  margin: 0;
+  color: #78685d;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Adaptación a tablets */
+@media (max-width: 900px) {
+  .featured {
+    padding: 64px 5%;
+  }
+
+  .featured-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+/* Adaptación a celulares */
 @media (max-width: 600px) {
   .site-header {
     padding: 14px 5%;
@@ -92,7 +187,6 @@ main {
   .hero {
     min-height: 70vh;
     padding: 60px 5%;
-    background-position: center;
     background-position: 60% center;
   }
 
@@ -102,5 +196,26 @@ main {
 
   .hero p {
     font-size: 17px;
+  }
+
+  .featured {
+    padding: 52px 5%;
+  }
+
+  .featured-heading {
+    margin-bottom: 28px;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .product-card img {
+    height: 160px;
+  }
+
+  .product-info {
+    padding: 20px;
   }
 }
