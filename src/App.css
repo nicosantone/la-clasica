@@ -43,7 +43,7 @@ main {
   align-items: center;
   min-height: 75vh;
   padding: 80px 7%;
-  background-image: url('/banner_picada.png');
+  background-image: url('/banner_picada3.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -77,13 +77,13 @@ main {
 
 /* Productos destacados */
 .featured {
-  padding: 80px 7%;
-  background-color: #faf7f2;
+  padding: 96px 7% 88px;
+  background-color: #f3eee6;
 }
 
 .featured-heading {
-  max-width: 650px;
-  margin: 0 auto 40px;
+  max-width: 720px;
+  margin: 0 auto 48px;
   text-align: center;
 }
 
@@ -92,13 +92,13 @@ main {
   color: #8b6a50;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
 }
 
 .featured-heading h2 {
   margin: 0 0 14px;
   color: #49372d;
-  font-size: clamp(30px, 4vw, 42px);
+  font-size: clamp(32px, 4vw, 44px);
   line-height: 1.2;
   letter-spacing: -0.8px;
 }
@@ -106,56 +106,86 @@ main {
 .featured-heading > p:last-child {
   margin: 0;
   color: #78685d;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
 .featured-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 26px;
-  max-width: 1000px;
+  gap: 32px;
+  max-width: 1100px;
   margin: 0 auto;
+  align-items: stretch;
 }
+
 
 .product-card {
   min-width: 0;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #ffffff;
-  box-shadow: 0 4px 18px rgb(73 55 45 / 7%);
+  border: 1px solid rgb(73 55 45 / 8%);
+  box-shadow: 0 6px 24px rgb(73 55 45 / 9%);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+
+
+
 .product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 28px rgb(73 55 45 / 12%);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgb(73 55 45 / 14%);
+  border-color: rgb(73 55 45 / 18%);
 }
+
+
+
 
 .product-card img {
   display: block;
   width: 100%;
-  height: 160px;
+  height: 230px;
   object-fit: cover;
+  flex-shrink: 0;
 }
+
+
+
 
 .product-info {
-  padding: 24px;
+  padding: 32px 28px 30px;
+  border-top: 1px solid rgb(73 55 45 / 7%);
+  text-align: center;
 }
+
+
+
 
 .product-info h3 {
-  margin: 0 0 10px;
+  margin: 0 0 14px;
   color: #49372d;
-  font-size: 21px;
-  line-height: 1.3;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
 }
 
+
+
+
 .product-info p {
-  margin: 0;
+  margin: 0 auto;
   color: #78685d;
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.8;
+  letter-spacing: 0.1px;
+  max-width: 34ch;
 }
+
+
 
 /* Adaptación a tablets */
 @media (max-width: 900px) {
@@ -212,7 +242,7 @@ main {
   }
 
   .product-card img {
-    height: 160px;
+    height: 230px;
   }
 
   .product-info {

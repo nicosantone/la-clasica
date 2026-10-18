@@ -32,7 +32,7 @@ function App() {
 
           <img
             className="hero-image"
-            src="/banner_picada.png"
+            src="/banner_picada3.png"
             alt="Picada de La Clásica"
           />
         </section>
@@ -42,7 +42,7 @@ function App() {
   <div className="featured-heading">
     <p className="section-eyebrow">PARA COMPARTIR</p>
     <h2>Nuestros destacados</h2>
-    <p>Opciones ideales para disfrutar de buenos momentos.</p>
+    <p>Opciones ideales para disfrutar cada momento.</p>
   </div>
 
   <div className="featured-grid">
