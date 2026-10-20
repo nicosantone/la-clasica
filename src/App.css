@@ -228,6 +228,153 @@ main {
   max-width: 34ch;
 }
 
+/* Sección de picadas */
+.picadas {
+  padding: 96px 7% 100px;
+  background-color: #faf7f2;
+}
+
+.picadas-heading {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.picadas-heading h2 {
+  margin: 0 0 14px;
+  color: #49372d;
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(34px, 4vw, 46px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+
+.picadas-heading > p:last-child {
+  margin: 0;
+  color: #78685d;
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  font-weight: 350;
+  line-height: 1.7;
+}
+
+.picadas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.picada-card {
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid rgb(73 55 45 / 9%);
+  border-radius: 8px;
+  box-shadow: 0 6px 24px rgb(73 55 45 / 8%);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.picada-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgb(73 55 45 / 13%);
+}
+
+.picada-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  background-color: #e9dfd2;
+}
+
+.picada-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.picada-card:hover .picada-image img {
+  transform: scale(1.03);
+}
+
+.picada-image span {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  padding: 10px 15px;
+  background-color: #faf7f2;
+  color: #49372d;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+}
+
+.picada-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 28px 30px 30px;
+}
+
+.picada-info h3 {
+  margin: 0 0 18px;
+  color: #49372d;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.picada-info ul {
+  margin: 0 0 24px;
+  padding-left: 20px;
+  color: #78685d;
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+.picada-price {
+  margin: auto 0 22px;
+  color: #49372d;
+  font-family: 'Jost', sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.picada-order {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  min-height: 46px;
+  padding: 12px 20px;
+  border: 1px solid #49372d;
+  color: #49372d;
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.picada-order:hover {
+  color: #fff;
+  background-color: #49372d;
+}
 
 
 /* Adaptación a tablets */
@@ -265,6 +412,22 @@ main {
 }
 }
 
+  .picadas {
+    padding: 64px 5%;
+  }
+
+  .picadas-grid {
+    gap: 22px;
+  }
+
+  .picada-image {
+    height: 250px;
+  }
+
+  .picada-info {
+    padding: 24px 22px;
+  }
+
 /* Adaptación específica para pantallas entre 901px y 1366px (tablets grandes y laptops pequeñas)  */
 @media (min-width: 901px) and (max-width: 1366px) {
   .site-header {
@@ -301,6 +464,30 @@ main {
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+   .picadas {
+    padding: 76px 5% 84px;
+  }
+
+  .picadas-heading {
+    margin-bottom: 40px;
+  }
+
+  .picadas-grid {
+    gap: 24px;
+  }
+
+  .picada-image {
+    height: 270px;
+  }
+
+  .picada-info {
+    padding: 26px 24px;
+  }
+
+  .picada-info h3 {
+    font-size: 26px;
   }
 
 }
@@ -364,5 +551,34 @@ main {
   left: 5%;
   transform: none;
 }
+
+.picadas {
+    padding: 52px 5% 64px;
+  }
+
+  .picadas-heading {
+    margin-bottom: 28px;
+  }
+
+  .picadas-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .picada-image {
+    height: 240px;
+  }
+
+  .picada-info {
+    padding: 22px 20px 24px;
+  }
+
+  .picada-info h3 {
+    font-size: 26px;
+  }
+
+  .picada-order {
+    align-self: stretch;
+  }
 
 }
