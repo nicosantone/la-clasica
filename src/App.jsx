@@ -107,7 +107,7 @@ function App() {
                 <p className="picada-price">$38.000</p>
                 <a
                   className="picada-order"
-                  href="https://wa.me/5491164650151"
+                  href="https://wa.me/5491164650151?text=Hola%2C%20quiero%20pedir%20una%20picada%20para%202%20personas."
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -131,7 +131,7 @@ function App() {
                 <p className="picada-price">$48.000</p>
                 <a
                   className="picada-order"
-                  href="https://wa.me/5491164650151"
+                  href="https://wa.me/5491164650151?text=Hola%2C%20quiero%20pedir%20una%20picada%20para%204%20a%206%20personas."
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -155,7 +155,7 @@ function App() {
                 <p className="picada-price">$58.000</p>
                 <a
                   className="picada-order"
-                  href="https://wa.me/5491164650151"
+                  href="https://wa.me/5491164650151?text=Hola%2C%20quiero%20pedir%20una%20picada%20para%206%20a%208%20personas."
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -179,7 +179,7 @@ function App() {
                 <p className="picada-price">$65.000</p>
                 <a
                   className="picada-order"
-                  href="https://wa.me/5491164650151"
+                  href="https://wa.me/5491164650151?text=Hola%2C%20quiero%20pedir%20una%20picada%20para%2010%20personas."
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -189,6 +189,41 @@ function App() {
             </article>
           </div>
         </section>
+        
+        <section className="reviews">
+          <div className="reviews-heading">
+            <p className="section-eyebrow">LA EXPERIENCIA DE NUESTROS CLIENTES</p>
+            <h2>Lo que dicen de nosotros</h2>
+          </div>
+
+          <div className="reviews-grid">
+            <article className="review-card">
+              <p className="review-text">
+                "¡Excelente atención y calidad de la picada! Compramos una
+                para 8 y comimos bárbaro!"
+              </p>
+              <p className="review-author">Ariel B.</p>
+            </article>
+
+            <article className="review-card">
+              <p className="review-text">
+                "Los productos son impecables y la atención de primera,
+                siempre que tenemos alguna reunión no dudamos en pedir una
+                picada."
+              </p>
+              <p className="review-author">Candela A.</p>
+            </article>
+
+            <article className="review-card">
+              <p className="review-text">
+                "Siempre te sacan del apuro con las comidas para hornear y
+                las picadas son excelentes, sin duda nuestra primera opción!"
+              </p>
+              <p className="review-author">Martín R.</p>
+            </article>
+          </div>
+        </section>
+
       </main>
     </>
   )
