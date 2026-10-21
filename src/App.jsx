@@ -281,6 +281,66 @@ function App() {
 
 
       </main>
+
+    
+      <footer className="site-footer">
+        <div className="footer-main">
+          <div className="footer-brand">
+            <img src="/LaClasica_LogoSinFondo2.png" alt="La Clásica" />
+            <p>Picadas que reúnen.</p>
+          </div>
+
+          <div className="footer-column">
+            <h3>Seguinos</h3>
+            <a
+              href="https://www.instagram.com/laclasicapicadas/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
+          </div>
+
+          <div className="footer-column">
+            <h3>Contacto</h3>
+            <a
+              href="https://wa.me/5491164650151"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp
+            </a>
+            <a
+              href="https://www.google.com/maps/place/Cortina+1929,+C1408CXK+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Cortina 1929, Villa Devoto
+            </a>
+          </div>
+
+          <div className="footer-column footer-hours">
+            <h3>Horarios de atención</h3>
+            <p>Lunes a viernes</p>
+            <span>8:00 a 13:00 y 16:00 a 20:30</span>
+            <p>Sábados</p>
+            <span>8:00 a 13:00</span>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>© {new Date().getFullYear()} La Clásica. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+
+
     </>
   )
 }
