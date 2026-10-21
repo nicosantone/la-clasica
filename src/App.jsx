@@ -224,6 +224,62 @@ function App() {
           </div>
         </section>
 
+        
+        {/* Sección de ubicación */}
+        <section className="location">
+          <div className="location-heading">
+            <p className="section-eyebrow">VENÍ A VISITARNOS</p>
+            <h2>Encontranos en Devoto</h2>
+            <p>Te esperamos en La Clásica para que encuentres todo lo rico que necesitás para compartir.</p>
+          </div>
+
+          <div className="location-content">
+            <div className="location-info">
+              <span className="location-label">NUESTRA DIRECCIÓN</span>
+              <h3>La Clásica</h3>
+              
+                <p className="location-address">
+                  Cortina 1929<br />
+                  Villa Devoto, Ciudad de Buenos Aires
+                </p>
+
+                <div className="location-hours">
+                  <h4>Horarios de atención</h4>
+                  <p>
+                    <span>Lunes a viernes</span>
+                    <span>8:00 a 13:00 y 16:00 a 20:30</span>
+                  </p>
+                  <p>
+                    <span>Sábados</span>
+                    <span>8:00 a 13:00</span>
+                  </p>
+                </div>
+
+
+              <a
+                className="location-link"
+                href="https://www.google.com/maps/place/Cortina+1929,+C1408CXK+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cómo llegar
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div className="location-map">
+              <iframe
+                src="https://maps.google.com/maps?q=Cortina%201929%2C%20Villa%20Devoto%2C%20Buenos%20Aires&output=embed"
+                title="Ubicación de La Clásica en Cortina 1929, Villa Devoto"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
+
+
       </main>
     </>
   )

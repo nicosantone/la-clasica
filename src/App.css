@@ -475,6 +475,176 @@ main {
   letter-spacing: 0.8px;
 }
 
+/* Sección de ubicación */
+.location {
+  padding: 96px 7% 100px;
+  background-color: #faf7f2;
+}
+
+.location-heading {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.location-heading .section-eyebrow {
+  margin: 0 0 14px;
+  color: #8b6a50;
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.location-heading h2 {
+  margin: 0 0 16px;
+  color: #49372d;
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(36px, 4.2vw, 48px);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.location-heading > p:last-child {
+  margin: 0;
+  color: #78685d;
+  font-family: 'Jost', sans-serif;
+  font-size: 17px;
+  font-weight: 350;
+  line-height: 1.7;
+}
+
+.location-content {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  max-width: 1100px;
+  min-height: 390px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #f3eee6;
+  border: 1px solid rgb(73 55 45 / 10%);
+  border-radius: 6px;
+  box-shadow: 0 8px 28px rgb(73 55 45 / 7%);
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 48px;
+}
+
+.location-label {
+  margin-bottom: 18px;
+  color: #8b6a50;
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+}
+
+.location-info h3 {
+  margin: 0 0 12px;
+  color: #49372d;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.location-address {
+  margin: 0;
+  color: #78685d;
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.location-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #8b6a50;
+  color: #49372d;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.location-link:hover {
+  color: #8b6a50;
+  border-color: #49372d;
+}
+
+.location-map {
+  min-width: 0;
+  min-height: 390px;
+  background-color: #e9dfd2;
+}
+
+.location-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 390px;
+  border: 0;
+}
+
+
+/* Horarios de atención */
+.location-hours {
+  width: 100%;
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid rgb(73 55 45 / 16%);
+}
+
+.location-hours h4 {
+  margin: 0 0 16px;
+  color: #49372d;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.location-hours p {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 0 0 14px;
+}
+
+.location-hours p:last-child {
+  margin-bottom: 0;
+}
+
+.location-hours p span:first-child {
+  color: #8b6a50;
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.location-hours p span:last-child {
+  color: #65584b;
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums;
+}
+
+
+
 
 /* Adaptación a tablets */
 @media (max-width: 900px) {
@@ -546,6 +716,18 @@ main {
 
   .review-card:last-child {
     grid-column: 1 / -1;
+  }
+
+  .location {
+    padding: 72px 5%;
+  }
+
+  .location-content {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .location-info {
+    padding: 32px;
   }
 
 
@@ -736,6 +918,40 @@ main {
     margin-bottom: 18px;
     font-size: 16px;
     line-height: 1.7;
+  }
+
+  .location {
+    padding: 56px 5% 64px;
+  }
+
+  .location-heading {
+    margin-bottom: 30px;
+  }
+
+  .location-heading h2 {
+    font-size: 34px;
+  }
+
+  .location-heading > p:last-child {
+    font-size: 16px;
+  }
+
+  .location-content {
+    grid-template-columns: 1fr;
+  }
+
+  .location-info {
+    padding: 32px 26px;
+  }
+
+  .location-info h3 {
+    font-size: 29px;
+  }
+
+  .location-map,
+  .location-map iframe {
+    min-height: 300px;
+    height: 300px;
   }
 
 }
