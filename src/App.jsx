@@ -100,9 +100,16 @@ function App() {
               <div className="picada-info">
                 <h3>Picada para 2</h3>
                 <ul>
-                  <li>Ingredientes a confirmar</li>
-                  <li>Ingredientes a confirmar</li>
-                  <li>Ingredientes a confirmar</li>
+                  <li>Longaniza</li>
+                  <li>Cantimpalo ahumado</li>
+                  <li>Mortadela</li>
+                  <li>Jamón cocido natural</li>
+                  <li>Jamón crudo</li>
+                  <li>Queso Holanda</li>
+                  <li>Queso azul</li>
+                  <li>Queso pategrás</li>
+                  <li>Queso tybo</li>
+                  <li>Olivas verdes y negras</li>
                 </ul>
                 <p className="picada-price">$38.000</p>
                 <a
@@ -124,9 +131,16 @@ function App() {
               <div className="picada-info">
                 <h3>Picada para 4 a 6</h3>
                 <ul>
-                  <li>Ingredientes a confirmar</li>
-                  <li>Ingredientes a confirmar</li>
-                  <li>Ingredientes a confirmar</li>
+                  <li>Longaniza</li>
+                  <li>Cantimpalo ahumado</li>
+                  <li>Mortadela</li>
+                  <li>Jamón cocido natural</li>
+                  <li>Jamón crudo</li>
+                  <li>Queso Holanda</li>
+                  <li>Queso azul</li>
+                  <li>Queso pategrás</li>
+                  <li>Queso tybo</li>
+                  <li>Olivas verdes y negras</li>
                 </ul>
                 <p className="picada-price">$48.000</p>
                 <a
@@ -148,9 +162,16 @@ function App() {
               <div className="picada-info">
                 <h3>Picada para 6 a 8</h3>
                 <ul>
-                  <li>Ingredientes a confirmar</li>
-                  <li>Ingredientes a confirmar</li>
-                  <li>Ingredientes a confirmar</li>
+                  <li>Longaniza</li>
+                  <li>Cantimpalo ahumado</li>
+                  <li>Mortadela</li>
+                  <li>Jamón cocido natural</li>
+                  <li>Jamón crudo</li>
+                  <li>Queso Holanda</li>
+                  <li>Queso azul</li>
+                  <li>Queso pategrás</li>
+                  <li>Queso tybo</li>
+                  <li>Olivas verdes y negras</li>
                 </ul>
                 <p className="picada-price">$58.000</p>
                 <a
@@ -172,9 +193,16 @@ function App() {
               <div className="picada-info">
                 <h3>Picada para 10</h3>
                 <ul>
-                  <li>Ingredientes a confirmar</li>
-                  <li>Ingredientes a confirmar</li>
-                  <li>Ingredientes a confirmar</li>
+                  <li>Longaniza</li>
+                  <li>Cantimpalo ahumado</li>
+                  <li>Mortadela</li>
+                  <li>Jamón cocido natural</li>
+                  <li>Jamón crudo</li>
+                  <li>Queso Holanda</li>
+                  <li>Queso azul</li>
+                  <li>Queso pategrás</li>
+                  <li>Queso tybo</li>
+                  <li>Olivas verdes y negras</li>
                 </ul>
                 <p className="picada-price">$65.000</p>
                 <a
@@ -300,7 +328,7 @@ function App() {
               Instagram
             </a>
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/laclasica.picadas"
               target="_blank"
               rel="noopener noreferrer"
             >
