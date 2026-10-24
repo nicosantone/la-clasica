@@ -17,14 +17,17 @@
   display: inline-flex;
   align-items: center;
   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .brand img {
   display: block;
-  width: 235px;
+  width: 190px;
   height: auto;
+  object-fit: contain;
+  overflow: visible;
 }
 
 .whatsapp-link {

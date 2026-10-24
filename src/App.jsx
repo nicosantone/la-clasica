@@ -7,7 +7,7 @@ function App() {
       <header className="site-header">
         <a className="brand" href="/" aria-label="La Clásica, inicio">
           <img
-            src="/LaClasica_LogoSinFondo2.png"
+            src="/logoRebranding.png"
             alt="La Clásica"
           />
         </a>
