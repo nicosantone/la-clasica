@@ -125,7 +125,7 @@ function App() {
 
             <article className="picada-card">
               <div className="picada-image">
-                <img src="/IMG_1496.jpg" alt="Picada de La Clásica" />
+                <img src="/picadaEjemplo.png" alt="Picada de La Clásica" />
                 <span>Para 4 a 6 personas</span>
               </div>
               <div className="picada-info">
@@ -156,7 +156,7 @@ function App() {
 
             <article className="picada-card">
               <div className="picada-image">
-                <img src="/IMG_1496.jpg" alt="Picada de La Clásica" />
+                <img src="/picadaEjemplo2.png" alt="Picada de La Clásica" />
                 <span>Para 6 a 8 personas</span>
               </div>
               <div className="picada-info">
@@ -187,7 +187,7 @@ function App() {
 
             <article className="picada-card">
               <div className="picada-image">
-                <img src="/IMG_1496.jpg" alt="Picada de La Clásica" />
+                <img src="/picadaEjemplo3.png" alt="Picada de La Clásica" />
                 <span>Para 10 personas</span>
               </div>
               <div className="picada-info">
