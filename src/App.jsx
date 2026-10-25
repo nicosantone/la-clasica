@@ -31,7 +31,7 @@ function App() {
 
           <img
             className="hero-image"
-            src="/banner_picada3.png"
+            src="/banner_picada4.PNG"
             alt="Picada de La Clásica"
           />
         </section>
