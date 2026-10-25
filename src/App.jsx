@@ -45,7 +45,7 @@ function App() {
 
           <div className="featured-grid">
             <article className="product-card">
-              <img src="/IMG_1485.jpg" alt="Picada de La Clásica" />
+              <img src="/picadaSlide.PNG" alt="Picada de La Clásica" />
               <div className="product-info">
                 <h3>Picadas para compartir</h3>
                 <p>
@@ -57,7 +57,7 @@ function App() {
 
             <article className="product-card">
               <img
-                src="/IMG_1492.jpg"
+                src="/quesosFiambres.png"
                 alt="Selección de fiambres y quesos"
               />
               <div className="product-info">
@@ -70,15 +70,32 @@ function App() {
             </article>
 
             <article className="product-card">
-              <img src="/IMG_1502.jpg" alt="Productos de La Clásica" />
-              <div className="product-info">
-                <h3>Para cada ocasión</h3>
-                <p>
-                  Alternativas para compartir algo rico y disfrutar de cada
-                  encuentro.
-                </p>
-              </div>
-            </article>
+  <img src="/paraHornear.PNG" alt="Productos de La Clásica" />
+  <div className="product-info">
+    <h3>Para cada ocasión</h3>
+    <p>
+      Alternativas para compartir algo rico y disfrutar de cada
+      encuentro.
+    </p>
+  </div>
+</article>
+
+
+<article className="product-card">
+  <img
+    className="delicatessen-img"
+    src="/delicatessen.jpeg"
+    alt="Encurtidos y conservas de La Clásica"
+  />
+  <div className="product-info">
+    <h3>Delicatessen</h3>
+    <p>
+      Encurtidos y conservas seleccionados para sumar sabores
+      especiales a tu mesa.
+    </p>
+  </div>
+</article>
+
           </div>
         </section>
 
