@@ -320,7 +320,7 @@ function App() {
         <section className="location">
           <div className="location-heading">
             <p className="section-eyebrow">VENÍ A VISITARNOS</p>
-            <h2>Encontranos en Devoto</h2>
+            <h2>Encontranos en Monte Castro</h2>
             <p>Te esperamos en La Clásica para que encuentres todo lo rico que necesitás para compartir.</p>
           </div>
 
@@ -331,7 +331,7 @@ function App() {
               
                 <p className="location-address">
                   Cortina 1929<br />
-                  Villa Devoto, Ciudad de Buenos Aires
+                  Monte Castro, Ciudad de Buenos Aires
                 </p>
 
                 <div className="location-hours">
