@@ -99,141 +99,187 @@ function App() {
           </div>
         </section>
 
-        <section className="picadas">
-          <div className="picadas-heading">
-            <p className="section-eyebrow">PARA COMPARTIR</p>
-            <h2>Nuestras picadas</h2>
-            <p>
-              Una selección de sabores para disfrutar alrededor de la mesa.
-            </p>
-          </div>
+        
+<section className="picadas">
+  <div className="picadas-heading">
+    <p className="section-eyebrow">PARA COMPARTIR</p>
+    <h2>Nuestras picadas</h2>
+    <p>
+      Una selección de sabores para disfrutar alrededor de la mesa.
+    </p>
+  </div>
 
-          <div className="picadas-grid">
-            <article className="picada-card">
-              <div className="picada-image">
-                <img src="/IMG_1496.jpg" alt="Picada de La Clásica" />
-                <span>Para 2 personas</span>
-              </div>
-              <div className="picada-info">
-                <h3>Picada para 2</h3>
-                <ul>
-                  <li>Longaniza</li>
-                  <li>Cantimpalo ahumado</li>
-                  <li>Mortadela</li>
-                  <li>Jamón cocido natural</li>
-                  <li>Jamón crudo</li>
-                  <li>Queso Holanda</li>
-                  <li>Queso azul</li>
-                  <li>Queso pategrás</li>
-                  <li>Queso tybo</li>
-                  <li>Olivas verdes y negras</li>
-                </ul>
-                <p className="picada-price">$38.000</p>
-                <a
-                  className="picada-order"
-                  href="https://wa.me/5491164650151?text=Hola%2C%20quiero%20pedir%20una%20picada%20para%202%20personas."
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Pedir por WhatsApp
-                </a>
-              </div>
-            </article>
+  <div className="picadas-grid">
+    <article className="picada-card">
+      <div className="picada-image picada-image-blur">
+        <img
+          className="picada-image-background"
+          src="/IMG_1496.jpg"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          className="picada-image-foreground"
+          src="/IMG_1496.jpg"
+          alt="Picada de La Clásica"
+        />
+        <span>Para 2 personas</span>
+      </div>
 
-            <article className="picada-card">
-              <div className="picada-image">
-                <img src="/TablaGourmet.png" alt="Picada de La Clásica" />
-                <span>Para 4 a 6 personas</span>
-              </div>
-              <div className="picada-info">
-                <h3>Picada para 4 a 6</h3>
-                <ul>
-                  <li>Longaniza</li>
-                  <li>Cantimpalo ahumado</li>
-                  <li>Mortadela</li>
-                  <li>Jamón cocido natural</li>
-                  <li>Jamón crudo</li>
-                  <li>Queso Holanda</li>
-                  <li>Queso azul</li>
-                  <li>Queso pategrás</li>
-                  <li>Queso tybo</li>
-                  <li>Olivas verdes y negras</li>
-                </ul>
-                <p className="picada-price">$48.000</p>
-                <a
-                  className="picada-order"
-                  href="https://wa.me/5491164650151?text=Hola%2C%20quiero%20pedir%20una%20picada%20para%204%20a%206%20personas."
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Pedir por WhatsApp
-                </a>
-              </div>
-            </article>
+      <div className="picada-info">
+        <h3>Picada para 2</h3>
+        <ul>
+          <li>Longaniza</li>
+          <li>Cantimpalo ahumado</li>
+          <li>Mortadela</li>
+          <li>Jamón cocido natural</li>
+          <li>Jamón crudo</li>
+          <li>Queso Holanda</li>
+          <li>Queso azul</li>
+          <li>Queso pategrás</li>
+          <li>Queso tybo</li>
+          <li>Olivas verdes y negras</li>
+        </ul>
+        <p className="picada-price">$38.000</p>
+        <a
+          className="picada-order"
+          href="https://wa.me/5491164650151?text=Hola%2C%20quiero%20pedir%20una%20picada%20para%202%20personas."
+          target="_blank"
+          rel="noreferrer"
+        >
+          Pedir por WhatsApp
+        </a>
+      </div>
+    </article>
 
-            <article className="picada-card">
-              <div className="picada-image">
-                <img src="/TablaGourmet2.png" alt="Picada de La Clásica" />
-                <span>Para 6 a 8 personas</span>
-              </div>
-              <div className="picada-info">
-                <h3>Picada para 6 a 8</h3>
-                <ul>
-                  <li>Longaniza</li>
-                  <li>Cantimpalo ahumado</li>
-                  <li>Mortadela</li>
-                  <li>Jamón cocido natural</li>
-                  <li>Jamón crudo</li>
-                  <li>Queso Holanda</li>
-                  <li>Queso azul</li>
-                  <li>Queso pategrás</li>
-                  <li>Queso tybo</li>
-                  <li>Olivas verdes y negras</li>
-                </ul>
-                <p className="picada-price">$58.000</p>
-                <a
-                  className="picada-order"
-                  href="https://wa.me/5491164650151?text=Hola%2C%20quiero%20pedir%20una%20picada%20para%206%20a%208%20personas."
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Pedir por WhatsApp
-                </a>
-              </div>
-            </article>
+    <article className="picada-card">
+      <div className="picada-image picada-image-blur">
+        <img
+          className="picada-image-background"
+          src="/TablaGourmet.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          className="picada-image-foreground"
+          src="/TablaGourmet.png"
+          alt="Picada de La Clásica para 4 a 6 personas"
+        />
+        <span>Para 4 a 6 personas</span>
+      </div>
 
-            <article className="picada-card">
-              <div className="picada-image">
-                <img src="/TablaGourmet3.png" alt="Picada de La Clásica" />
-                <span>Para 10 personas</span>
-              </div>
-              <div className="picada-info">
-                <h3>Picada para 10</h3>
-                <ul>
-                  <li>Longaniza</li>
-                  <li>Cantimpalo ahumado</li>
-                  <li>Mortadela</li>
-                  <li>Jamón cocido natural</li>
-                  <li>Jamón crudo</li>
-                  <li>Queso Holanda</li>
-                  <li>Queso azul</li>
-                  <li>Queso pategrás</li>
-                  <li>Queso tybo</li>
-                  <li>Olivas verdes y negras</li>
-                </ul>
-                <p className="picada-price">$65.000</p>
-                <a
-                  className="picada-order"
-                  href="https://wa.me/5491164650151?text=Hola%2C%20quiero%20pedir%20una%20picada%20para%2010%20personas."
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Pedir por WhatsApp
-                </a>
-              </div>
-            </article>
-          </div>
-        </section>
+      <div className="picada-info">
+        <h3>Picada para 4 a 6</h3>
+        <ul>
+          <li>Longaniza</li>
+          <li>Cantimpalo ahumado</li>
+          <li>Mortadela</li>
+          <li>Jamón cocido natural</li>
+          <li>Jamón crudo</li>
+          <li>Queso Holanda</li>
+          <li>Queso azul</li>
+          <li>Queso pategrás</li>
+          <li>Queso tybo</li>
+          <li>Olivas verdes y negras</li>
+        </ul>
+        <p className="picada-price">$48.000</p>
+        <a
+          className="picada-order"
+          href="https://wa.me/5491164650151?text=Hola%2C%20quiero%20pedir%20una%20picada%20para%204%20a%206%20personas."
+          target="_blank"
+          rel="noreferrer"
+        >
+          Pedir por WhatsApp
+        </a>
+      </div>
+    </article>
+
+    <article className="picada-card">
+      <div className="picada-image picada-image-blur">
+        <img
+          className="picada-image-background"
+          src="/TablaGourmet2.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          className="picada-image-foreground"
+          src="/TablaGourmet2.png"
+          alt="Picada de La Clásica para 6 a 8 personas"
+        />
+        <span>Para 6 a 8 personas</span>
+      </div>
+
+      <div className="picada-info">
+        <h3>Picada para 6 a 8</h3>
+        <ul>
+          <li>Longaniza</li>
+          <li>Cantimpalo ahumado</li>
+          <li>Mortadela</li>
+          <li>Jamón cocido natural</li>
+          <li>Jamón crudo</li>
+          <li>Queso Holanda</li>
+          <li>Queso azul</li>
+          <li>Queso pategrás</li>
+          <li>Queso tybo</li>
+          <li>Olivas verdes y negras</li>
+        </ul>
+        <p className="picada-price">$58.000</p>
+        <a
+          className="picada-order"
+          href="https://wa.me/5491164650151?text=Hola%2C%20quiero%20pedir%20una%20picada%20para%206%20a%208%20personas."
+          target="_blank"
+          rel="noreferrer"
+        >
+          Pedir por WhatsApp
+        </a>
+      </div>
+    </article>
+
+    <article className="picada-card">
+      <div className="picada-image picada-image-blur">
+        <img
+          className="picada-image-background"
+          src="/TablaGourmet3.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          className="picada-image-foreground"
+          src="/TablaGourmet3.png"
+          alt="Picada de La Clásica para 10 personas"
+        />
+        <span>Para 10 personas</span>
+      </div>
+
+      <div className="picada-info">
+        <h3>Picada para 10</h3>
+        <ul>
+          <li>Longaniza</li>
+          <li>Cantimpalo ahumado</li>
+          <li>Mortadela</li>
+          <li>Jamón cocido natural</li>
+          <li>Jamón crudo</li>
+          <li>Queso Holanda</li>
+          <li>Queso azul</li>
+          <li>Queso pategrás</li>
+          <li>Queso tybo</li>
+          <li>Olivas verdes y negras</li>
+        </ul>
+        <p className="picada-price">$65.000</p>
+        <a
+          className="picada-order"
+          href="https://wa.me/5491164650151?text=Hola%2C%20quiero%20pedir%20una%20picada%20para%2010%20personas."
+          target="_blank"
+          rel="noreferrer"
+        >
+          Pedir por WhatsApp
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
         
         <section className="reviews">
           <div className="reviews-heading">

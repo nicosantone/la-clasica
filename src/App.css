@@ -310,9 +310,38 @@ main {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   transition: transform 0.4s ease;
 }
+
+/* prueba */
+
+.picada-image-blur {
+  isolation: isolate;
+}
+
+.picada-image img.picada-image-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(18px) brightness(0.75);
+  transform: scale(1.12);
+  z-index: -1;
+}
+
+.picada-image img.picada-image-foreground {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* fin prueba */
 
 .picada-card:hover .picada-image img {
   transform: scale(1.03);
@@ -322,6 +351,8 @@ main {
   position: absolute;
   left: 18px;
   bottom: 18px;
+  z-index: 2;
+isolation: isolate;
   padding: 10px 15px;
   background-color: #faf7f2;
   color: #49372d;
