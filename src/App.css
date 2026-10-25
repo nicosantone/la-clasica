@@ -801,6 +801,49 @@ isolation: isolate;
 }
 
 
+/* Animación de entrada del texto del banner */
+.hero-content h1 {
+  animation: heroTitleIn 0.8s ease-out both;
+}
+
+.hero-content p {
+  animation: heroSubtitleIn 0.8s ease-out 0.2s both;
+}
+
+@keyframes heroTitleIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroSubtitleIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Respeta la preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  .hero-content h1,
+  .hero-content p {
+    animation: none;
+  }
+}
+
+
+
 /* Adaptación a tablets */
 @media (max-width: 900px) {
   .featured {
@@ -960,35 +1003,43 @@ isolation: isolate;
 
 }
 
+
 /* Adaptación a celulares */
 @media (max-width: 600px) {
   .site-header {
     padding: 14px 5%;
   }
 
+  .brand {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .brand img {
     width: 125px;
   }
 
-  .whatsapp-link {
-    padding: 10px 14px;
-    font-size: 14px;
+.whatsapp-link {
+  padding: 8px 10px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  transform: translateX(6px);
+}
+
+  .hero {
+    height: 75vh;
+    min-height: 480px;
+    padding: 100px 5% 48px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
- .hero {
-  height: 75vh;
-  min-height: 480px;
-  padding: 100px 5% 48px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.hero h1 {
-  font-size: clamp(32px, 8vw, 44px);
-  letter-spacing: -1px;
-  white-space: nowrap;
-}
+  .hero h1 {
+    font-size: clamp(32px, 8vw, 44px);
+    letter-spacing: -1px;
+    white-space: nowrap;
+  }
 
   .hero p {
     font-size: 17px;
@@ -1015,12 +1066,7 @@ isolation: isolate;
     padding: 20px;
   }
 
-  .brand {
-  left: 5%;
-  transform: none;
-}
-
-.picadas {
+  .picadas {
     padding: 52px 5% 64px;
   }
 
@@ -1049,7 +1095,7 @@ isolation: isolate;
     align-self: stretch;
   }
 
-.reviews {
+  .reviews {
     padding: 52px 6% 56px;
   }
 
@@ -1157,5 +1203,5 @@ isolation: isolate;
     font-size: 11px;
     line-height: 1.7;
   }
-
 }
+
